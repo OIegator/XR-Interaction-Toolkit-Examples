@@ -17,6 +17,10 @@ namespace UnityEngine.XR.Content.Interaction
         [SerializeField]
         [Tooltip("The value of the lever")]
         bool m_Value = false;
+        
+        [SerializeField]
+        [Tooltip("Power state of the lever")]
+        bool m_Power = false;
 
         [SerializeField]
         [Tooltip("If enabled, the lever will snap to the value position when released")]
@@ -39,6 +43,11 @@ namespace UnityEngine.XR.Content.Interaction
         [SerializeField]
         [Tooltip("Events to trigger when the lever deactivates")]
         UnityEvent m_OnLeverDeactivate = new UnityEvent();
+        
+        [SerializeField]
+        [Tooltip("Events to trigger when no power")]
+        UnityEvent m_OnNoPowerInteraction = new UnityEvent();
+
 
         IXRSelectInteractor m_Interactor;
 
@@ -49,6 +58,15 @@ namespace UnityEngine.XR.Content.Interaction
         {
             get => m_Handle;
             set => m_Handle = value;
+        }
+
+        /// <summary>
+        /// Power state of the lever
+        /// </summary>
+        public bool power
+        {
+            get => m_Power;
+            set => m_Power = value;
         }
 
         /// <summary>
@@ -82,7 +100,12 @@ namespace UnityEngine.XR.Content.Interaction
             get => m_MinAngle;
             set => m_MinAngle = value;
         }
-
+        
+        /// <summary>
+        /// Events to trigger when the lever activates
+        /// </summary>
+        public UnityEvent onNoPowerInteraction => m_OnNoPowerInteraction;
+        
         /// <summary>
         /// Events to trigger when the lever activates
         /// </summary>
@@ -182,13 +205,17 @@ namespace UnityEngine.XR.Content.Interaction
 
             m_Value = isOn;
 
-            if (m_Value)
+            if (m_Value && m_Power)
             {
                 m_OnLeverActivate.Invoke();
             }
-            else
+            else if (!m_Value && m_Power)
             {
                 m_OnLeverDeactivate.Invoke();
+            }
+            else 
+            {
+                m_OnNoPowerInteraction.Invoke();
             }
 
             if (!isSelected && (m_LockToValue || forceRotation))
