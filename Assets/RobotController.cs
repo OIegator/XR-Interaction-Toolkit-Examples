@@ -28,6 +28,7 @@ public class RobotController : MonoBehaviour
     [SerializeField] LegStepper frontLeftLegStepper;
     [SerializeField] LegStepper frontRightLegStepper;
     [SerializeField] LegStepper backLegStepper;
+    [SerializeField] LayerMask layerMask;
 
 // Only allow diagonal leg pairs to step together
     IEnumerator LegUpdateCoroutine()
@@ -65,8 +66,9 @@ public class RobotController : MonoBehaviour
 
     public void RotateObject(float knobValue)
     {
+        Debug.Log(knobValue);
         // Задаем угол вращения объекта в зависимости от значения руля
-        float targetRotation = Mathf.Lerp(-90.0f, 90.0f, knobValue);
+        float targetRotation = Mathf.Lerp(-180.0f, 180.0f, knobValue);
 
 
         // Плавно вращаем объект
@@ -113,7 +115,7 @@ public class RobotController : MonoBehaviour
         
         // Keep the object at a constant height above the ground
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, Vector3.down, out hit, Mathf.Infinity))
+        if (Physics.Raycast(transform.position, Vector3.down, out hit, Mathf.Infinity, layerMask))
         {
             // Calculate the desired height above the ground
             float desiredHeight = hit.point.y + 1.4f;
