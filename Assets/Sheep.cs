@@ -9,5 +9,6 @@ public class Sheep : MonoBehaviour
     public void teleportation()
     {
         transform.position = tp_point.transform.position;
+        transform.localScale = Vector3.one;
     }
 }

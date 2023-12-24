@@ -66,7 +66,6 @@ public class RobotController : MonoBehaviour
 
     public void RotateObject(float knobValue)
     {
-        Debug.Log(knobValue);
         // Задаем угол вращения объекта в зависимости от значения руля
         float targetRotation = Mathf.Lerp(-180.0f, 180.0f, knobValue);
 
