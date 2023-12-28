@@ -227,15 +227,15 @@ MonoBehaviour:
   - name: Shock
     collapsed: 0
   - name: Sparks
-    collapsed: 1
+    collapsed: 0
   - name: Particles
-    collapsed: 1
+    collapsed: 0
   - name: Fuze
     collapsed: 0
   uiBounds:
     serializedVersion: 2
     x: 232
-    y: -2319
+    y: -2318
     width: 3835
     height: 4530
 --- !u!114 &114350483966674976
@@ -526,7 +526,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: 
+      m_SerializableObject: '{"obj":{"fileID":2800000,"guid":"30a8cfbc8b0c38d45bd8ac21c2f9f416","type":3}}'
     min: -Infinity
     max: Infinity
     enumValues: []
@@ -1105,7 +1105,7 @@ MonoBehaviour:
   particlePerStripCount: 16
   needsComputeBounds: 0
   boundsMode: 0
-  m_Space: 0
+  m_Space: 1
 --- !u!114 &8926484042661614569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2333,7 +2333,7 @@ MonoBehaviour:
         m_SerializableType: UnityEditor.VFX.Transform, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       m_SerializableObject: '{"position":{"x":0.0,"y":0.0,"z":0.0},"angles":{"x":0.0,"y":0.0,"z":0.0},"scale":{"x":1.0,"y":1.0,"z":1.0}}'
-    m_Space: 0
+    m_Space: 1
   m_Property:
     name: transform
     m_serializedType:
@@ -2977,7 +2977,7 @@ MonoBehaviour:
         m_SerializableType: UnityEditor.VFX.Transform, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       m_SerializableObject: '{"position":{"x":0.0,"y":0.0,"z":0.0},"angles":{"x":0.0,"y":0.0,"z":0.0},"scale":{"x":1.0,"y":1.0,"z":1.0}}'
-    m_Space: 0
+    m_Space: 1
   m_Property:
     name: o
     m_serializedType:
@@ -3609,7 +3609,7 @@ MonoBehaviour:
         m_SerializableType: UnityEditor.VFX.Transform, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       m_SerializableObject: '{"position":{"x":0.0,"y":0.0,"z":0.0},"angles":{"x":0.0,"y":0.0,"z":0.0},"scale":{"x":1.0,"y":1.0,"z":1.0}}'
-    m_Space: 0
+    m_Space: 1
   m_Property:
     name: transform
     m_serializedType:
@@ -4050,7 +4050,7 @@ MonoBehaviour:
         m_SerializableType: UnityEditor.VFX.Position, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       m_SerializableObject: '{"position":{"x":0.0,"y":0.0,"z":0.0}}'
-    m_Space: 0
+    m_Space: 1
   m_Property:
     name: position
     m_serializedType:
@@ -4221,7 +4221,7 @@ MonoBehaviour:
         m_SerializableType: UnityEditor.VFX.Position, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       m_SerializableObject: '{"position":{"x":0.0,"y":0.0,"z":0.0}}'
-    m_Space: 0
+    m_Space: 1
   m_Property:
     name: tPos
     m_serializedType:
@@ -4420,7 +4420,7 @@ MonoBehaviour:
         m_SerializableType: UnityEditor.VFX.Position, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       m_SerializableObject: '{"position":{"x":0.0,"y":0.0,"z":0.0}}'
-    m_Space: 0
+    m_Space: 1
   m_Property:
     name: Position
     m_serializedType:
@@ -6499,7 +6499,7 @@ MonoBehaviour:
   particlePerStripCount: 16
   needsComputeBounds: 0
   boundsMode: 0
-  m_Space: 0
+  m_Space: 1
 --- !u!114 &8926484042661615049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6686,7 +6686,7 @@ MonoBehaviour:
         m_SerializableType: UnityEditor.VFX.Position, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       m_SerializableObject: '{"position":{"x":0.0,"y":0.0,"z":0.0}}'
-    m_Space: 0
+    m_Space: 1
   m_Property:
     name: Position
     m_serializedType:
@@ -7550,7 +7550,7 @@ MonoBehaviour:
         m_SerializableType: UnityEditor.VFX.Transform, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       m_SerializableObject: '{"position":{"x":0.0,"y":0.0,"z":0.0},"angles":{"x":0.0,"y":0.0,"z":0.0},"scale":{"x":1.0,"y":1.0,"z":1.0}}'
-    m_Space: 0
+    m_Space: 1
   m_Property:
     name: transform
     m_serializedType:
@@ -8211,7 +8211,7 @@ MonoBehaviour:
         m_SerializableType: UnityEditor.VFX.Transform, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       m_SerializableObject: '{"position":{"x":0.0,"y":0.0,"z":0.0},"angles":{"x":0.0,"y":0.0,"z":0.0},"scale":{"x":1.0,"y":1.0,"z":1.0}}'
-    m_Space: 0
+    m_Space: 1
   m_Property:
     name: transform
     m_serializedType:
@@ -8652,7 +8652,7 @@ MonoBehaviour:
         m_SerializableType: UnityEditor.VFX.Position, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       m_SerializableObject: '{"position":{"x":0.0,"y":0.0,"z":0.0}}'
-    m_Space: 0
+    m_Space: 1
   m_Property:
     name: position
     m_serializedType:
@@ -8823,7 +8823,7 @@ MonoBehaviour:
         m_SerializableType: UnityEditor.VFX.Position, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       m_SerializableObject: '{"position":{"x":0.0,"y":0.0,"z":0.0}}'
-    m_Space: 0
+    m_Space: 1
   m_Property:
     name: tPos
     m_serializedType:
@@ -11616,7 +11616,7 @@ MonoBehaviour:
   particlePerStripCount: 16
   needsComputeBounds: 0
   boundsMode: 1
-  m_Space: 0
+  m_Space: 1
 --- !u!114 &8926484042661615312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11849,7 +11849,7 @@ MonoBehaviour:
         m_SerializableType: UnityEditor.VFX.Transform, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       m_SerializableObject: '{"position":{"x":0.0,"y":0.0,"z":0.0},"angles":{"x":0.0,"y":0.0,"z":0.0},"scale":{"x":1.0,"y":1.0,"z":1.0}}'
-    m_Space: 0
+    m_Space: 1
   m_Property:
     name: transform
     m_serializedType:
@@ -12351,7 +12351,7 @@ MonoBehaviour:
         m_SerializableType: UnityEditor.VFX.Position, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       m_SerializableObject: '{"position":{"x":0.0,"y":0.0,"z":0.0}}'
-    m_Space: 0
+    m_Space: 1
   m_Property:
     name: Position
     m_serializedType:
@@ -12652,7 +12652,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: 
+      m_SerializableObject: '{"obj":{"fileID":2800000,"guid":"30a8cfbc8b0c38d45bd8ac21c2f9f416","type":3}}'
     m_Space: 2147483647
   m_Property:
     name: mainTexture
@@ -14359,7 +14359,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: 
+      m_SerializableObject: '{"obj":{"fileID":2800000,"guid":"30a8cfbc8b0c38d45bd8ac21c2f9f416","type":3}}'
     m_Space: 2147483647
   m_Property:
     name: o
@@ -15238,7 +15238,7 @@ MonoBehaviour:
         m_SerializableType: UnityEditor.VFX.Transform, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       m_SerializableObject: '{"position":{"x":0.0,"y":0.0,"z":0.0},"angles":{"x":0.0,"y":0.0,"z":0.0},"scale":{"x":1.0,"y":1.0,"z":1.0}}'
-    m_Space: 0
+    m_Space: 1
   m_Property:
     name: transform
     m_serializedType:
@@ -15679,7 +15679,7 @@ MonoBehaviour:
         m_SerializableType: UnityEditor.VFX.Position, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       m_SerializableObject: '{"position":{"x":0.0,"y":0.0,"z":0.0}}'
-    m_Space: 0
+    m_Space: 1
   m_Property:
     name: position
     m_serializedType:
@@ -15850,7 +15850,7 @@ MonoBehaviour:
         m_SerializableType: UnityEditor.VFX.Position, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       m_SerializableObject: '{"position":{"x":0.0,"y":0.0,"z":0.0}}'
-    m_Space: 0
+    m_Space: 1
   m_Property:
     name: tPos
     m_serializedType:
@@ -16943,7 +16943,7 @@ MonoBehaviour:
   particlePerStripCount: 16
   needsComputeBounds: 0
   boundsMode: 0
-  m_Space: 0
+  m_Space: 1
 --- !u!114 &8926484042661615516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17673,7 +17673,7 @@ MonoBehaviour:
         m_SerializableType: UnityEditor.VFX.Transform, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       m_SerializableObject: '{"position":{"x":0.0,"y":0.0,"z":0.0},"angles":{"x":0.0,"y":0.0,"z":0.0},"scale":{"x":0.30000001192092898,"y":0.30000001192092898,"z":0.30000001192092898}}'
-    m_Space: 0
+    m_Space: 1
   m_Property:
     name: FieldTransform
     m_serializedType:
@@ -19045,7 +19045,7 @@ MonoBehaviour:
   particlePerStripCount: 90
   needsComputeBounds: 0
   boundsMode: 0
-  m_Space: 0
+  m_Space: 1
 --- !u!114 &8926484042661615580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19360,7 +19360,7 @@ MonoBehaviour:
         m_SerializableType: UnityEditor.VFX.Transform, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       m_SerializableObject: '{"position":{"x":0.0,"y":0.0,"z":0.0},"angles":{"x":0.0,"y":0.0,"z":0.0},"scale":{"x":0.30000001192092898,"y":0.30000001192092898,"z":0.30000001192092898}}'
-    m_Space: 0
+    m_Space: 1
   m_Property:
     name: FieldTransform
     m_serializedType:
@@ -20375,7 +20375,7 @@ MonoBehaviour:
         m_SerializableType: UnityEditor.VFX.AABox, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       m_SerializableObject: '{"center":{"x":0.0,"y":0.0,"z":0.0},"size":{"x":0.5929434299468994,"y":0.3768855631351471,"z":0.5534108877182007}}'
-    m_Space: 0
+    m_Space: 1
   m_Property:
     name: Box
     m_serializedType:
@@ -20740,7 +20740,7 @@ MonoBehaviour:
         m_SerializableType: UnityEditor.VFX.Position, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       m_SerializableObject: '{"position":{"x":0.0,"y":0.0,"z":1.0}}'
-    m_Space: 0
+    m_Space: 1
   m_Property:
     name: Position
     m_serializedType:
@@ -20911,7 +20911,7 @@ MonoBehaviour:
         m_SerializableType: UnityEditor.VFX.Position, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       m_SerializableObject: '{"position":{"x":0.0,"y":0.0,"z":0.0}}'
-    m_Space: 0
+    m_Space: 1
   m_Property:
     name: RotationCenter
     m_serializedType:
@@ -21287,7 +21287,7 @@ MonoBehaviour:
         m_SerializableType: UnityEditor.VFX.Position, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       m_SerializableObject: '{"position":{"x":0.0,"y":0.0,"z":0.0}}'
-    m_Space: 0
+    m_Space: 1
   m_Property:
     name: Position
     m_serializedType:
@@ -21793,9 +21793,9 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
   m_Direction: 1
   m_LinkedSlots:
-  - {fileID: 8926484042661615623}
   - {fileID: 8926484042661615645}
   - {fileID: 8926484042661615730}
+  - {fileID: 8926484042661615623}
 --- !u!114 &8926484042661615681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22086,7 +22086,7 @@ MonoBehaviour:
         m_SerializableType: UnityEditor.VFX.Position, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       m_SerializableObject: '{"position":{"x":0.0,"y":0.0,"z":0.0}}'
-    m_Space: 0
+    m_Space: 1
   m_Property:
     name: Position
     m_serializedType:
@@ -22666,7 +22666,7 @@ MonoBehaviour:
         m_SerializableType: UnityEditor.VFX.TSphere, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       m_SerializableObject: '{"transform":{"position":{"x":0.0,"y":0.0,"z":0.0},"angles":{"x":0.0,"y":0.0,"z":0.0},"scale":{"x":1.0,"y":1.0,"z":1.0}},"radius":1.0}'
-    m_Space: 0
+    m_Space: 1
   m_Property:
     name: sphere
     m_serializedType:

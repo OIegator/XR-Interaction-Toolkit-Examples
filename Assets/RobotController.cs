@@ -30,6 +30,12 @@ public class RobotController : MonoBehaviour
     [SerializeField] LegStepper backLegStepper;
     [SerializeField] LayerMask layerMask;
 
+    // Reference to the VFX effect
+    [SerializeField] GameObject vfxEffect;
+
+    // Flag to check if rotation is allowed
+    private bool allowRotation = true;
+    private bool allowMove = true;
 // Only allow diagonal leg pairs to step together
     IEnumerator LegUpdateCoroutine()
     {
@@ -66,6 +72,12 @@ public class RobotController : MonoBehaviour
 
     public void RotateObject(float knobValue)
     {
+        
+        if (!allowRotation || currentVelocity.magnitude != 0)
+        {
+            BreakObject();
+            return;
+        }
         // Задаем угол вращения объекта в зависимости от значения руля
         float targetRotation = Mathf.Lerp(-180.0f, 180.0f, knobValue);
 
@@ -77,6 +89,7 @@ public class RobotController : MonoBehaviour
     
     public void MoveObjectForward()
     {
+        if (!allowMove) return;
         Vector3 forwardDirection = transform.forward;
         
         // Используем плавное изменение скорости с учетом moveAcceleration
@@ -89,7 +102,21 @@ public class RobotController : MonoBehaviour
         // Обновляем позицию объекта
         currentVelocity = forwardDirection * moveSpeed;
     }
-    
+
+    public void BreakObject()
+    {
+        currentVelocity = Vector3.zero;
+        // Disable rotation
+        allowRotation = false;
+        allowMove = false;
+
+        // Deactivate VFX effect
+        if (vfxEffect != null)
+        {
+            vfxEffect.SetActive(true);
+        }
+    }
+
     public void StopObject()
     {
         // Сбрасываем текущую скорость, чтобы остановить объект
