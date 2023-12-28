@@ -29,6 +29,7 @@ public class TeleportDoor : MonoBehaviour
     {
         // Перемещаем игрока в указанное место
         playerTransform.parent.transform.position = teleportDestination.position;
+        playerTransform.transform.localPosition = Vector3.zero;
         playerTransform.rotation = teleportDestination.rotation;
     }
 

@@ -23,7 +23,15 @@ public class CameraFade : MonoBehaviour
         texture.SetPixel(0, 0, new Color(fadeColor.r, fadeColor.g, fadeColor.b, alpha));
         texture.Apply();
     }
-    
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Sheep"))
+        {
+            EndGame();
+            //FadeOutAndEndGame();
+        }
+    }
     public void FadeOutAndEndGame()
     {
         // Начинаем затенение
