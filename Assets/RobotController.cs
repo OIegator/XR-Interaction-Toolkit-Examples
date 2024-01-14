@@ -32,6 +32,7 @@ public class RobotController : MonoBehaviour
 
     // Reference to the VFX effect
     [SerializeField] GameObject vfxEffect;
+    [SerializeField] GameObject beamEffect;
 
     // Flag to check if rotation is allowed
     private bool allowRotation = true;
@@ -75,6 +76,7 @@ public class RobotController : MonoBehaviour
         
         if (!allowRotation || currentVelocity.magnitude != 0)
         {
+            StopObject();
             BreakObject();
             return;
         }
@@ -105,15 +107,42 @@ public class RobotController : MonoBehaviour
 
     public void BreakObject()
     {
-        currentVelocity = Vector3.zero;
         // Disable rotation
         allowRotation = false;
         allowMove = false;
 
-        // Deactivate VFX effect
+        // Activate VFX effect
         if (vfxEffect != null)
         {
             vfxEffect.SetActive(true);
+        }
+        
+        // Deactivate beam effect
+        if (beamEffect != null)
+        {
+            beamEffect.SetActive(false);
+        }
+        StartCoroutine(FixObject(3.0f));
+    }
+    
+    IEnumerator FixObject(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        // Enable rotation and movement
+        allowRotation = true;
+        allowMove = true;
+
+        // Deactivate VFX effect
+        if (vfxEffect != null)
+        {
+            vfxEffect.SetActive(false);
+        }
+
+        // Activate beam effect
+        if (beamEffect != null)
+        {
+            beamEffect.SetActive(true);
         }
     }
 
