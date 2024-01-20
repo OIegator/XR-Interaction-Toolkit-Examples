@@ -241,6 +241,91 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7128215835568584494, guid: 8b799fb37a52aaa49a29e4cd5358345e, type: 3}
   m_PrefabInstance: {fileID: 988945623}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &88814998
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 88814999}
+  - component: {fileID: 88815001}
+  - component: {fileID: 88815000}
+  m_Layer: 0
+  m_Name: BatteryTpTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &88814999
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88814998}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 6.05, z: 0}
+  m_LocalScale: {x: 500, y: 1, z: 500}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1144489268}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &88815000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88814998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59fe722e016ecae438f59fbf21af3ecf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RequiredTag: Battery
+  m_OnEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6963895716969248143}
+        m_TargetAssemblyTypeName: Battery, Assembly-CSharp
+        m_MethodName: Teleportation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_OnExit:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!65 &88815001
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88814998}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 6.608898, z: 0}
 --- !u!1001 &110490073
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2267,7 +2352,12 @@ MonoBehaviour:
     \u043D\u0435 \u0442\u0430\u043A \u0441 \u043F\u0438\u0442\u0430\u043D\u0438\u0435\u043C"
   - "\u041F\u043E\u043F\u0440\u043E\u0431\u0443\u0439 \u0440\u0430\u0437\u043E\u0431\u0440\u0430\u0442\u044C\u0441\u044F
     \u0441 \u044D\u0442\u0438\u043C!"
-  tpTriggerTextArray: []
+  tpTriggerTextArray:
+  - "\u041E\u0442\u043B\u0438\u0447\u043D\u043E! \u0423 \u0442\u0435\u0431\u044F
+    \u043F\u043E\u043B\u0443\u0447\u0438\u043B\u043E\u0441\u044C!"
+  - "\u0421\u043A\u043E\u0440\u0435\u0435 \u043F\u043E\u0434\u043D\u0435\u0441\u0438
+    \u0435\u0451 \u043A\u043E \u043C\u043D\u0435! \u041E\u0447\u0435\u043D\u044C
+    \u0445\u043E\u0447\u0435\u0442\u0441\u044F \u043E\u0431\u043D\u044F\u0442\u044C\u0441\u044F!"
 --- !u!1 &673391301
 GameObject:
   m_ObjectHideFlags: 0
@@ -3943,6 +4033,7 @@ Transform:
   - {fileID: 143107465}
   - {fileID: 1220864003}
   - {fileID: 1432999054}
+  - {fileID: 88814999}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1180905793
@@ -4639,6 +4730,7 @@ Transform:
   - {fileID: 1482800450}
   - {fileID: 6146260122817791338}
   - {fileID: 375780487}
+  - {fileID: 2012636924}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1369756942 stripped
@@ -6044,6 +6136,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1954490863}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2012636923
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2012636924}
+  m_Layer: 0
+  m_Name: BatteryPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2012636924
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2012636923}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.17579536, y: 0.8169535, z: 0.4438081, w: 0.32360077}
+  m_LocalPosition: {x: -0.19799995, y: -1.331, z: 0.08768749}
+  m_LocalScale: {x: 0.21614765, y: 0.21614765, z: 0.21614766}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1298802086}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2045569428
 GameObject:
   m_ObjectHideFlags: 0
@@ -7641,15 +7764,51 @@ GameObject:
   m_Component:
   - component: {fileID: 1238556679763707834}
   - component: {fileID: 4626273224774650163}
+  - component: {fileID: 6963895716969248144}
   - component: {fileID: 4847396399848367675}
   - component: {fileID: 5097192293231272273}
+  - component: {fileID: 6963895716969248143}
   m_Layer: 0
   m_Name: Battery
-  m_TagString: Untagged
+  m_TagString: Battery
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6963895716969248143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6963895716969248142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8208e6687ed893e4996c00567857d5a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tpPoint: {fileID: 2012636924}
+--- !u!65 &6963895716969248144
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6963895716969248142}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.30693457, y: 0.49449274, z: 0.34522864}
+  m_Center: {x: -0.009933059, y: 0.25275367, z: 0.03523221}
 --- !u!1 &7273246072765170307
 GameObject:
   m_ObjectHideFlags: 0

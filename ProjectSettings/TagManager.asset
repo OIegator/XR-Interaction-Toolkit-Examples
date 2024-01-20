@@ -11,6 +11,7 @@ TagManager:
   - Water
   - Sheep
   - Ground
+  - Battery
   layers:
   - Default
   - TransparentFX
