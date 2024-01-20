@@ -1,14 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Sheep : MonoBehaviour
 {
-    [SerializeField]
-    public Transform tp_point;
-    public void teleportation()
+    [SerializeField] public Transform tpPoint;
+    [SerializeField] public ChangeDialog dialog;
+    [SerializeField] public RobotController robot;
+
+    public void Teleportation()
     {
-        transform.position = tp_point.transform.position;
+        transform.position = tpPoint.transform.position;
         transform.localScale = Vector3.one;
+        dialog.TriggerTpEvent();
+        robot.StopObject();
     }
 }

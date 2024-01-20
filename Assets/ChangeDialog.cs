@@ -9,7 +9,8 @@ public class ChangeDialog : MonoBehaviour
     private int currentIndex = 0; // Текущий индекс в массиве текстов
 
     // Добавляем новый массив для сообщений, связанных с триггером
-    [FormerlySerializedAs("newTriggerTextArray")] public string[] powerTriggerTextArray;
+    public string[] powerTriggerTextArray;
+    public string[] tpTriggerTextArray;
 
     void Start()
     {
@@ -58,6 +59,19 @@ public class ChangeDialog : MonoBehaviour
             gameObject.SetActive(true);
             // Устанавливаем новый массив текстов для отображения
             textArray = powerTriggerTextArray;
+            currentIndex = 0;
+            UpdateTextField();
+        }
+    }
+
+    public void TriggerTpEvent()
+    {
+        // Активируем текстовое поле, если у нас есть новые тексты для отображения
+        if (tpTriggerTextArray.Length > 0)
+        {
+            gameObject.SetActive(true);
+            // Устанавливаем новый массив текстов для отображения
+            textArray = tpTriggerTextArray;
             currentIndex = 0;
             UpdateTextField();
         }
