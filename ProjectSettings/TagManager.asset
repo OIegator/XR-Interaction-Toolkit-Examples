@@ -12,6 +12,7 @@ TagManager:
   - Sheep
   - Ground
   - Battery
+  - Robot
   layers:
   - Default
   - TransparentFX
